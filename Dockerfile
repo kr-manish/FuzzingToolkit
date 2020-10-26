@@ -50,4 +50,8 @@ RUN git clone https://github.com/google/AFL.git && cd AFL && make && make instal
 
 RUN mkdir targets
 
+WORKDIR targets
+
+RUN mkdir _in && mkdir _out
+
 CMD /bin/bash
